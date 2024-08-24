@@ -2,16 +2,16 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: selfhealtestapp
-  namespace: argocd
+ namespace: new-app
 spec:
   destination:
-    namespace: argocdappdemo
+    namespace: new-app
     server: 'https://kubernetes.default.svc'
   source:
     path: 0-Demo_Files/Nginx_Deployment
     repoURL: 'https://github.com/SMACAcademy/ArgoCD-Complete-Master-Course.git'
     targetRevision: HEAD
-  project: default
+  project: my-project
   syncPolicy:
     automated:
       prune: false
