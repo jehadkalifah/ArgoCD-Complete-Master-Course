@@ -8,7 +8,7 @@ spec:
     namespace: new-app
     server: https://kubernetes.default.svc
   source:
-    path: 0-Demo_Files/Nginx_Deployment_ArgoCD_Apps
+    path: 0-Demo_Files/Demo_Deployment
     repoURL: https://github.com/jehadkalifah/ArgoCD-Complete-Master-Course.git
     targetRevision: HEAD
   sources: []
